@@ -1,2 +1,1 @@
-# Example
-An example greeter plugin
+A plugin to use with the dropit redeam
