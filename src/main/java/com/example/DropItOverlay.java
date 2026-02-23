@@ -12,8 +12,8 @@ import net.runelite.api.EquipmentInventorySlot;
 import net.runelite.api.InventoryID;
 import net.runelite.api.Item;
 import net.runelite.api.ItemContainer;
+import net.runelite.api.widgets.ComponentID;
 import net.runelite.api.widgets.Widget;
-import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
@@ -84,7 +84,7 @@ public class DropItOverlay extends Overlay
         // If they have a weapon equipped during the penalty phase...
         if (weapon != null && weapon.getId() > 0)
         {
-            Widget invWidget = client.getWidget(WidgetInfo.INVENTORY);
+            Widget invWidget = client.getWidget(ComponentID.INVENTORY_CONTAINER);
             if (invWidget != null && !invWidget.isHidden())
             {
                 // 1. Draw the blackout box over the inventory
